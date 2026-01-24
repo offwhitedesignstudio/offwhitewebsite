@@ -1,7 +1,7 @@
 import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 
 const FloatingSocials = () => {
-  const phoneNumber = "+919773712438";
+  const phoneNumber = "+9197737 12348";
   const message = "Hello! I would like to discuss a project.";
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
     message,
