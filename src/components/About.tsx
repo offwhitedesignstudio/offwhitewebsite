@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import logo from "../assets/logo.png";
 import sagar from "../assets/sagar.jpg";
+import deepika from "../assets/deepika.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -93,8 +94,7 @@ const About = () => {
       name: "Deepika Malik",
       role: "Creative Director & Design Strategist",
       bio: "The creative compass of Off White Design, Deepika orchestrates spaces through intentional aesthetics, narrative clarity, and disciplined financial stewardship—transforming ideas into cohesive, emotionally resonant realities.",
-      image:
-        "https://images.pexels.com/photos/762020/pexels-photo-762020.jpeg?auto=compress&cs=tinysrgb&w=800",
+      image: deepika,
     },
     {
       name: "Sagar Pawar",
