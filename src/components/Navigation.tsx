@@ -71,7 +71,7 @@ const Navigation = () => {
           >
             <img
               src={logo}
-              alt="Off White Hospitality"
+              alt="Off White Design"
               className="h-14 sm:h-16 object-contain"
             />
 
@@ -88,7 +88,7 @@ const Navigation = () => {
                   scrolled ? "text-gray-500" : "text-white/60"
                 }`}
               >
-                HOSPITALITY
+                Design
               </span>
             </div>
           </div>
