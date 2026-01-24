@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@keyframes scrollDot {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+.animate-scrollDot {
+  animation: scrollDot 1.6s infinite ease-in-out;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
