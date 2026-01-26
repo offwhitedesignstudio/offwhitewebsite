@@ -113,7 +113,7 @@ const Hero = () => {
                 OFF WHITE
               </div>
               <div className="text-white/60 text-[9px] tracking-[0.45em] mt-1">
-                HOSPITALITY
+                DESIGN
               </div>
             </div>
           </div>
