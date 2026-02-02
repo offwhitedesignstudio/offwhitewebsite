@@ -33,7 +33,7 @@ const Footer = () => {
               aria-label="PurpleMinds Tech website"
               className="font-medium text-[#3F4A4E] group-hover:text-black transition-colors duration-300"
             >
-              PurpleMinds Tech
+              PurpleMinds Tech / Shyamverse media
             </a>
           </p>
 
