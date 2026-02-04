@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import logo from "../assets/logo.png";
+import heroBg from "../assets/hero_background.jpg";
 
 const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -30,13 +31,13 @@ const Hero = () => {
         .fromTo(
           logoRef.current,
           { opacity: 0, scale: 0.9 },
-          { opacity: 1, scale: 1, duration: 1.1, ease: "power3.out" }
+          { opacity: 1, scale: 1, duration: 1.1, ease: "power3.out" },
         )
         .fromTo(
           brandRef.current,
           { opacity: 0, y: 10 },
           { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" },
-          "-=0.6"
+          "-=0.6",
         )
         .to([logoRef.current, brandRef.current], {
           opacity: 0,
@@ -58,7 +59,7 @@ const Hero = () => {
           buttonRef.current,
           scrollRef.current,
         ],
-        { opacity: 0, y: 20 }
+        { opacity: 0, y: 20 },
       );
 
       gsap
@@ -83,7 +84,7 @@ const Hero = () => {
   const scrollToAbout = () => {
     document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
   };
-  const scrollToService= () => {
+  const scrollToService = () => {
     document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -126,15 +127,14 @@ const Hero = () => {
         ref={heroRef}
         className="relative h-screen flex items-center justify-center font-poppins overflow-hidden"
         style={{
-          backgroundImage:
-            "url(https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920)",
+          backgroundImage: `url(${heroBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         {/* SEO-visible background image */}
         <img
-          src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src={heroBg}
           alt="Boutique hospitality interior design project by Off White Design"
           className="hidden"
         />
